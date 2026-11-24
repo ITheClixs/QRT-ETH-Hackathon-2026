@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+notebooks/scratch/
+
+# Data: competition data is never committed (competition rules + repo size)
+data/*
+!data/README.md
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.joblib
+catboost_info/
+
+# Heavy run artifacts stay local; small metadata lives in results/registry/
+runs/
+submissions/*.csv
+submissions/*.zip
+
+# Local tooling
+.worktrees/
+.DS_Store
+.idea/
+.vscode/
+.env
